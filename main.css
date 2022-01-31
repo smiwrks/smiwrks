@@ -1,0 +1,182 @@
+html { overflow-y: hidden; }
+body {margin: 0;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+a { text-decoration: none;
+color: inherit;}
+
+p {
+	font-family: Segoe UI;
+	font-size: 130%;/*120*/
+	font-weight: 400;/*500*/
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes show2 {
+  0% {
+	transform:translateX(-100%);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+	transform:translateX(0);
+  }
+}
+@keyframes show3 {
+  0% {
+	transform:translateX(100%);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+	transform:translateX(0);
+  }
+}
+.main {
+	animation: 3s ease-out 0s 1 show;
+}
+
+
+.button {
+	color: black;
+	text-orientation: upright;
+	text-align: center;
+	writing-mode: vertical-lr;
+	float: left;
+	display: block;
+	width: 100px;
+	height: 100vh;
+	box-shadow: inset 40px 0 40px -40px rgba(0,0,0,1);
+	transition: 0.5s;
+	margin-right:38vw;
+}
+
+.buttonnull {
+	float: left;
+	display: block;
+	width: 100px;
+	height: 100vh;
+	margin-right:38vw;
+}
+
+.button2 {
+	color: black;
+	text-orientation: upright;
+	text-align: center;
+	writing-mode: vertical-rl;
+	float: right;
+	display: block;
+	width: 100px;
+	height: 100vh;
+	box-shadow: inset -40px 0 40px -40px rgba(0,0,0,0.9);
+	transition: 0.5s;
+}
+
+
+
+.button:hover {
+	color: white;
+	text-orientation: upright;
+	text-align: center;
+	writing-mode: vertical-lr;
+	float: left;
+	display: block;
+	width: 100px;
+	height: 100vh;
+	box-shadow: inset 120px 0 20px -40px rgba(0,0,0,1);
+	/*box-shadow: inset 100px 0 40px -40px rgba(0,0,0,.4);*/
+	transition: 0.7s;
+	cursor: pointer;
+}
+
+.button2:hover {
+	color: white;
+	text-orientation: upright;
+	text-align: center;
+	writing-mode: vertical-rl;
+	float: right;
+	display: block;
+	width: 100px;
+	height: 100vh;
+	box-shadow: inset -120px 0 20px -40px rgba(0,0,0,1);
+	/*box-shadow: inset -100px 0 40px -40px rgba(0,0,0,.4);*/
+	transition: 0.7s;
+	cursor: pointer;
+}
+.center {
+	display: inline-block;
+	text-align: center;
+	width: 12vw;
+	float: left;
+	margin-top:2vh;
+}
+
+.content {
+	font-family: Segoe UI;
+	font-size: 145%;
+	font-weight: 300;
+	margin-top: 13vh;
+}
+
+.contentport {
+	font-family: Segoe UI;
+	font-size: 130%;
+	font-weight: 300;
+	margin-top: 13vh;
+	
+	transition: 1s; /* Время эффекта */
+}
+
+.contentport:hover {
+    transform: scale(2) translateY(20%); /* Увеличиваем масштаб */
+	color: white;
+}
+
+/*.vizitka {
+	transition: 0.8s;
+	opacity: 1;
+	transform:translateY(350%);
+	visibility: hidden;
+}
+
+.contentport:hover .vizitka {
+	visibility: visible;
+	opacity: 1;
+	transform:translateY(50%);
+	box-shadow: 15px 15px 20px 1px rgba(0,0,0,0.5);
+}*/
+
+.rl {
+	animation: 3s ease-out 0s 1 show2;
+}
+
+.rl2 {
+	animation: 3s ease-out 0s 1 show3;
+}
+
+
+
